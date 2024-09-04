@@ -1,7 +1,7 @@
 let myHttp = require("http");
 
 let myServer = myHttp.createServer(
-  // pass a complete function run whjen the server receives an http request
+
   function (myRequest, myResponse) {
     console.log(myRequest.url);
   
@@ -23,5 +23,4 @@ let myServer = myHttp.createServer(
   },
 );
 
-// listen()  tcp port and IP
 myServer.listen(80, "0.0.0.0");
